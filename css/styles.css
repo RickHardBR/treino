@@ -1,0 +1,257 @@
+body {
+  background-color: color-mix(in srgb, #f08811 85%, #946d01 40%);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 20px;
+  text-align: center;
+  border: none;
+  font-family: 'Lato';
+  font-size: 1.2rem;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  color: #fff;
+}
+
+.exercises ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.exercises li {
+  margin-bottom: 10px;
+}
+
+.exercises input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.exercises input[type="text"] {
+  margin-left: 10px;
+}
+
+.btn {
+  border: none;
+  font-family: 'Lato';
+  text-shadow: 0.1em 0.1em 0.2em black;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 1.5625rem 5rem;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 16rem;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-sep {
+  padding: 25px 60px 25px ;
+}
+
+.btn-sep:before {
+  background: rgba(0,0,0,0.15);
+}
+
+/* Button segunda */
+.btn-1 {
+  background: #3498db;
+  color: #fff;
+}
+
+.btn-1:hover {
+  background: #2980b9;
+}
+
+.btn-1:active {
+  background: #2980b9;
+  top: 2px;
+}
+
+.btn-1:before {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
+}
+
+/* Button terca */
+.btn-2 {
+  background: #2ecc71;
+  color: #fff;
+}
+
+.btn-2:hover {
+  background: #27ae60;
+}
+
+.btn-2:active {
+  background: #27ae60;
+  top: 2px;
+}
+
+.btn-2:before {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
+}
+
+/* Button quarta */
+.btn-3 {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.btn-3:hover {
+  background: #c0392b;
+}
+
+.btn-3:active {
+  background: #c0392b;
+  top: 2px;
+}
+
+.btn-3:before {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
+}
+
+/* Button quinta */
+.btn-4 {
+  background: #34495e;
+  color: #fff;
+}
+
+.btn-4:hover {
+  background: #2c3e50;
+}
+
+.btn-4:active {
+  background: #2c3e50;
+  top: 2px;
+}
+
+.btn-4:before {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
+}
+
+/* Button sexta */
+.btn-5 {
+  background: #2b0202;
+  color: #fff;
+}
+
+.btn-5:hover {
+  background: #5f0202;
+}
+
+.btn-5:active {
+  background: #5f0202;
+  top: 2px;
+}
+
+.btn-5:before {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
+}
+
+/*----------------------------------------------------------------*/
+
+.icon-cart:before {
+  content: "\f07a";
+}
+
+.icon-heart:before {
+  content: "\f55a";
+}
+
+.icon-info:before {
+  content: "\f05a";
+}
+
+.icon-send:before {
+  content: "\f1d8";
+}
+
+ /* 600px (tipicamente dispositivos móveis) */
+@media only screen and (max-width: 600px){
+  .videos {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+/* largura mínima de 601px (tipicamente dispositivos desktop) */
+@media only screen and (min-width: 601px) { 
+  
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    max-width: 800px;
+  }
+}
