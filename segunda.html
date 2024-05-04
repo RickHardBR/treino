@@ -14,10 +14,13 @@
             <ul>
                 <li>
                     <input type="checkbox" id="supino-reto">
-                    <label for="supino-reto">Supino reto</label>
+                    <label for="supino-reto">Supino reto (barra ou alteres)</label>
                     <input class="carga" type="text" placeholder="(kg)">
-<div class="series">4 séries - 8 repetições </div>
                 </li>
+                <li>
+                    <div class="series">4 séries - 8 repetições </div>
+                </li>
+                <li>
                    <iframe class="videos"
                         width="640"
                         height="360"
@@ -27,11 +30,26 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
                         allowfullscreen>
                     </iframe>
+                </li>    
                 <li>
                     <input type="checkbox" id="crucifixo">
                     <label for="crucifixo">Crucifixo com halteres</label>
-                    <input type="text" placeholder="(kg)">
+                    <input class="carga" type="text" placeholder="(kg)">
                 </li>
+                <li>
+                    <div class="series">3 séries - 10 - 15 repetições </div>
+                    </li>
+                    <li>
+                       <iframe class="videos"
+                            width="640"
+                            height="360"
+                            src="https://www.youtube.com/embed/NB_1mCfIOLU"
+                            title="Crucifixo com halteres - Exercício para Peito - Baixe o App!"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </li>  
                 <li>
                     <input type="checkbox" id="pullover">
                     <label for="pullover">Pullover com halter</label>
@@ -44,8 +62,11 @@
                 </li>
             </ul>
         </div>
-      
     </div>
+    <button
+        class="back-button animate"
+        onclick="history.back()">Voltar
+    </button>
     <script src="./js/script.js"></script>
 </body>
 </html>
