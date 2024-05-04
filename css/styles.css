@@ -31,7 +31,9 @@ h2 {
 }
 
 h3 {
+  color: aliceblue;
   text-align: center;
+  text-shadow: 0.1em 0.1em 0.2em rgb(255, 254, 254);
 }
 
 .exercises ul {
