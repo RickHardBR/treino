@@ -7,68 +7,94 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container-exercises">
         <h1>Meu Treino de Musculação</h1>
         <div class="exercises">
-            <h2>Segunda-feira: Peito</h2>
+            <h2>Sexta-feira: Braços</h2>
             <ul>
                 <li>
-                    <input type="checkbox" id="supino-reto">
-                    <label for="supino-reto">Supino reto</label>
-                    <input type="text" placeholder="Carga (kg)">
+                    <input type="checkbox" id="Curl">
+                    <label for="Curl">Curl com barra (ou halteres)</label>
+                    <input class="carga" type="text" placeholder="(kg)">
                 </li>
+                <li>
+                    <div class="series">4 séries - 8 - 12 repetições </div>
+                </li>
+                <li>
                    <iframe class="videos"
                         width="640"
                         height="360"
-                        src="https://www.youtube.com/embed/SWVO95XzxKg"
-                        title="Supino Reto com Halteres - Exercício para Peito - Baixe o App!"
+                        src="https://www.youtube.com/embed/s4B8UW3BMqk"
+                        title="Curl com halteres - Exercício para os Braços"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
                         allowfullscreen>
                     </iframe>
+                </li>    
                 <li>
-                    <input type="checkbox" id="crucifixo">
-                    <label for="crucifixo">Crucifixo com halteres</label>
-                    <input type="text" placeholder="Carga (kg)">
+                    <input type="checkbox" id="triceps-testa">
+                    <label for="triceps-testa">Tríceps testa</label>
+                    <input class="carga" type="text" placeholder="(kg)">
+                </li>
+                    <li>
+                        <div class="series">3 séries - 10 - 15 repetições</div>
+                    </li>
+                    <li>
+                       <iframe class="videos"
+                            width="640"
+                            height="360"
+                            src="https://www.youtube.com/embed/oqob5MHbzBc"
+                            title="triceps-testa - Exercício para Braços"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </li>  
+                <li>
+                    <input type="checkbox" id="rosca-alternada">
+                    <label for="Rosca alternada com halteres">Rosca alternada com alteres</label>
+                    <input class="carga" type="text" placeholder="(kg)">
+                    <li>
+                        <div class="series">3 séries - 10 - 12 repetições</div>
+                    </li>
+                    <li>
+                       <iframe class="videos"
+                            width="640"
+                            height="360"
+                            src="https://www.youtube.com/embed/k31LK_VASok"
+                            title="Elevação frontal - Exercício para Braços"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </li>  
                 </li>
                 <li>
-                    <input type="checkbox" id="pullover">
-                    <label for="pullover">Pullover com halter</label>
-                    <input type="text" placeholder="Carga (kg)">
-                </li>
-                <li>
-                    <input type="checkbox" id="flexoes">
-                    <label for="flexoes">Flexões</label>
-                    <input type="text" placeholder="Quantidade">
-                </li>
-            </ul>
-        </div>
-        <div class="exercises">
-            <h2>-feira: </h2>
-            <ul>
-                <li>
-                    <input type="checkbox" id="supino-reto">
-                    <label for="supino-reto"></label>
-                    <input type="text" placeholder="Carga (kg)">
-                </li>
-                <li>
-                    <input type="checkbox" id="crucifixo">
-                    <label for="crucifixo"></label>
-                    <input type="text" placeholder="Carga (kg)">
-                </li>
-                <li>
-                    <input type="checkbox" id="pullover">
-                    <label for="pullover"></label>
-                    <input type="text" placeholder="Carga (kg)">
-                </li>
-                <li>
-                    <input type="checkbox" id="flexoes">
-                    <label for="flexoes"></label>
-                    <input type="text" placeholder="Quantidade">
+                    <input type="checkbox" id="triceps-corda">
+                    <label for="triceps-corda">Tríceps corda</label>
+                    <input class="carga" type="text" placeholder="Quant.">
+                    <li>
+                        <div class="series">3 séries - 12 - 15 repetições</div>
+                    </li>
+                    <li>
+                       <iframe class="videos"
+                            width="640"
+                            height="360"
+                            src="https://www.youtube.com/embed/gbnLZto6b0s"
+                            title="triceps-cordas - Exercício para Braços"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </li>  
                 </li>
             </ul>
         </div>
     </div>
+    <button
+        class="back-button animate"
+        onclick="history.back()">Voltar
+    </button>
     <script src="./js/script.js"></script>
 </body>
 </html>

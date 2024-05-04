@@ -7,68 +7,94 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container-exercises">
         <h1>Meu Treino de Musculação</h1>
         <div class="exercises">
-            <h2>Segunda-feira: Peito</h2>
+            <h2>Quarta-feira: Pernas</h2>
             <ul>
                 <li>
-                    <input type="checkbox" id="supino-reto">
-                    <label for="supino-reto">Supino reto</label>
-                    <input type="text" placeholder="Carga (kg)">
+                    <input type="checkbox" id="agachamento-livre">
+                    <label for="agachamento-livre">Agachamento livre</label>
+                    <input class="carga" type="text" placeholder="(kg)">
                 </li>
+                <li>
+                    <div class="series">4 séries - 8 - 12 repetições </div>
+                </li>
+                <li>
                    <iframe class="videos"
                         width="640"
                         height="360"
-                        src="https://www.youtube.com/embed/SWVO95XzxKg"
-                        title="Supino Reto com Halteres - Exercício para Peito - Baixe o App!"
+                        src="https://www.youtube.com/embed/WLw3eRGkM5U"
+                        title="Agachamento livre - Exercício para Pernas"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
                         allowfullscreen>
                     </iframe>
+                </li>    
                 <li>
-                    <input type="checkbox" id="crucifixo">
-                    <label for="crucifixo">Crucifixo com halteres</label>
-                    <input type="text" placeholder="Carga (kg)">
+                    <input type="checkbox" id="leg-press">
+                    <label for="leg-press">Leg press</label>
+                    <input class="carga" type="text" placeholder="(kg)">
                 </li>
+                    <li>
+                        <div class="series">3 séries - 10 - 15 repetições</div>
+                    </li>
+                    <li>
+                       <iframe class="videos"
+                            width="640"
+                            height="360"
+                            src="https://www.youtube.com/embed/9ruGCg0m9Tw"
+                            title="Leg press - Exercício para Pernmas"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </li>  
                 <li>
-                    <input type="checkbox" id="pullover">
-                    <label for="pullover">Pullover com halter</label>
-                    <input type="text" placeholder="Carga (kg)">
+                    <input type="checkbox" id="cadeira-extensora">
+                    <label for="cadeira-extensora">Cadeira extensora</label>
+                    <input class="carga" type="text" placeholder="(kg)">
+                    <li>
+                        <div class="series">3 séries - 10 - 15 repetições</div>
+                    </li>
+                    <li>
+                       <iframe class="videos"
+                            width="640"
+                            height="360"
+                            src="https://www.youtube.com/embed/lmK4wsg8GAM"
+                            title="Cadeira extensora - Exercício para Pernas"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </li>  
                 </li>
                 <li>
                     <input type="checkbox" id="flexoes">
-                    <label for="flexoes">Flexões</label>
-                    <input type="text" placeholder="Quantidade">
-                </li>
-            </ul>
-        </div>
-        <div class="exercises">
-            <h2>-feira: </h2>
-            <ul>
-                <li>
-                    <input type="checkbox" id="supino-reto">
-                    <label for="supino-reto"></label>
-                    <input type="text" placeholder="Carga (kg)">
-                </li>
-                <li>
-                    <input type="checkbox" id="crucifixo">
-                    <label for="crucifixo"></label>
-                    <input type="text" placeholder="Carga (kg)">
-                </li>
-                <li>
-                    <input type="checkbox" id="pullover">
-                    <label for="pullover"></label>
-                    <input type="text" placeholder="Carga (kg)">
-                </li>
-                <li>
-                    <input type="checkbox" id="flexoes">
-                    <label for="flexoes"></label>
-                    <input type="text" placeholder="Quantidade">
+                    <label for="flexoes">Flexão plantar sentado</label>
+                    <input class="carga" type="text" placeholder="Quant.">
+                    <li>
+                        <div class="series">3 séries - 12 - 15 repetições</div>
+                    </li>
+                    <li>
+                       <iframe class="videos"
+                            width="640"
+                            height="360"
+                            src="https://www.youtube.com/embed/N_bpzfkp0mg"
+                            title="Flexão plantar sentado - Exercício para Pernas - Baixe o App!"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </li>  
                 </li>
             </ul>
         </div>
     </div>
+    <button
+        class="back-button animate"
+        onclick="history.back()">Voltar
+    </button>
     <script src="./js/script.js"></script>
 </body>
 </html>
