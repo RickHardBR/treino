@@ -317,3 +317,28 @@ label {
     max-width: 800px;
   }
 }
+
+.footer_section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #ffffff;
+  text-align: center;
+  height: 150px;
+}
+
+.footer_section p {
+  color: #00204a;
+  padding: 25px 0;
+  margin: 0;
+}
+
+.footer_section img {
+  width: 40px;
+  padding: 25px 0;
+  margin: 0;
+}
+
+.footer_section p a {
+  color: inherit;
+}
