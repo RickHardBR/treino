@@ -30,6 +30,10 @@ h2 {
   color: #fff;
 }
 
+.title_exercise {
+  font-size: 2rem;
+}
+
 h3 {
   color: aliceblue;
   text-align: center;
@@ -44,6 +48,7 @@ h3 {
 .exercises li {
   margin-bottom: .625rem;
   text-shadow: 0.1em 0.1em 0.2em black;
+  text-align: center;
 }
 
 label {
@@ -103,13 +108,19 @@ label {
   transition: all 0.3s;
 }
 
-.btn:after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
+.btn:before {
+  animation: rotate 2s infinite linear infinite;
+  filter:blur(20px)
+}
+
+.btn .btninner {
+  position: relative;
+  display: flex;
+  width: 100%;
+  z-index: 1;
+  transition: all 0.18s ease;
+  backdrop-filter: blur(40px);
+  backface-visibility: hidden;
 }
 
 .btn-sep {
