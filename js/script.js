@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
 $(document).ready(function(){
     $('.carousel').slick({
         slidesToShow: 3,
@@ -51,5 +52,5 @@ $(document).ready(function(){
             }
         ]
     });
-});
-
+  });
+  

@@ -282,6 +282,13 @@ label {
   animation: arrow-blink 1s infinite alternate;
 }
 
+hr {
+  border: 1px solid;
+  color: #fff;
+  background-color: #fff;
+  height: 6px;
+}
+
 @keyframes arrow-blink {
   0% {
     opacity: 0;
@@ -372,6 +379,7 @@ iframe {
 /* Estilo dos pontos do carrossel */
 .slick-dots {
   text-align: center; /* Centraliza os pontos */
+  margin-bottom: 15px;
 }
 
 .slick-dots li {
