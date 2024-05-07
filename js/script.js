@@ -20,7 +20,10 @@ $(document).ready(function(){
         autoplay: false,
         autoplaySpeed: 2000,
         arrows: true,
+        swipe: true, // Permite arrastar para escolher outro vídeo
         dots: true,
+        
+        // Aqui estamos definindo a configuração appendArrows
         appendArrows: $('.carousel-arrows'),
         responsive: [
             {
@@ -48,17 +51,5 @@ $(document).ready(function(){
             }
         ]
     });
-
-    // Adiciona um manipulador de eventos para trocar o vídeo quando clicado
-    $('.carousel-item').on('click', function() {
-        var videoSrc = $(this).find('iframe').attr('src');
-        // Pausa o vídeo atual antes de trocar
-        $('.carousel-item iframe').each(function() {
-            $(this).attr('src', $(this).attr('src'));
-        });
-        // Inicia o vídeo clicado
-        $(this).find('iframe').attr('src', videoSrc);
-    });
 });
-
 
