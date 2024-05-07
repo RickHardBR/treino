@@ -353,3 +353,18 @@ label {
 .footer_section p a {
   color: inherit;
 }
+
+.carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-item {
+  display: none;
+}
+
+iframe {
+  width:640px;
+  height:360px;
+  border-radius: 25px;
+}
