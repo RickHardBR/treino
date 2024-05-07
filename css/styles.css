@@ -368,3 +368,47 @@ iframe {
   height:360px;
   border-radius: 25px;
 }
+
+/* Estilo dos pontos do carrossel */
+.slick-dots {
+  text-align: center; /* Centraliza os pontos */
+}
+
+.slick-dots li {
+  display: inline-block; /* Exibe os pontos lado a lado */
+  margin: 0 5px; /* Adiciona espaçamento entre os pontos */
+}
+
+.slick-dots li button {
+  width: 20px; /* Largura dos pontos */
+  height: 20px; /* Altura dos pontos */
+  border-radius: 50%; /* Transforma os pontos em círculos */
+  background-color: #bbb; /* Cor de fundo dos pontos */
+  border: 2px solid #030000; /* Borda dos pontos */
+  outline: none; /* Remove a borda de foco ao clicar */
+  position: relative; /* Permite posicionar os elementos filhos */
+}
+
+/* Adiciona os detalhes das anilhas */
+.slick-dots li button:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+/* Estilo dos pontos ativos do carrossel */
+.slick-dots li.slick-active button {
+  background-color: #000000; /* Cor de fundo dos pontos ativos */
+}
+
+/* Adiciona os detalhes das anilhas nos pontos ativos */
+.slick-dots li.slick-active button:before {
+  background-color: #0056b3; /* Cor de fundo dos pontos ativos */
+}
+

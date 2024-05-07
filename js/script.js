@@ -20,7 +20,9 @@ $(document).ready(function(){
         autoplay: false,
         autoplaySpeed: 2000,
         arrows: true,
+        swipe: true, // Permite arrastar para escolher outro vídeo
         dots: true,
+        
         // Aqui estamos definindo a configuração appendArrows
         appendArrows: $('.carousel-arrows'),
         responsive: [
