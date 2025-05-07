@@ -53,4 +53,32 @@ $(document).ready(function(){
         ]
     });
   });
-  
+  // Função para solicitar o modo tela cheia
+  function openFullscreen() {
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.mozRequestFullScreen) { /* Firefox */
+        elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari e Opera */
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+        elem.msRequestFullscreen();
+    }
+    isFullscreen = true; // Atualiza o estado para true
+    updateButton(); // Atualiza o texto e o comportamento do botão
+}
+
+// Função para sair do modo tela cheia
+function exitFullscreen() {
+    if (document.exitFullscreen) {
+        document.exitFullscreen();
+    } else if (document.mozCancelFullScreen) { /* Firefox */
+        document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) { /* Chrome, Safari e Opera */
+        document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { /* IE/Edge */
+        document.msExitFullscreen();
+    }
+    isFullscreen = false; // Atualiza o estado para false
+    updateButton(); // Atualiza o texto e o comportamento do botão
+}
