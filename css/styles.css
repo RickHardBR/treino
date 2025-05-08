@@ -346,8 +346,8 @@ hr {
   background-color: #ffffff;
   text-align: center;
   height: 150px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .footer_section p {
