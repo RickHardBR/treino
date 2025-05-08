@@ -257,6 +257,9 @@ label {
 }
 
 .back-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
@@ -265,8 +268,7 @@ label {
   cursor: pointer;
   outline: none;
   transition: background-color 0.3s;
-  float: right;
-  margin: 1rem;
+  z-index: 1000;
 }
 
 .back-button:hover {
@@ -274,13 +276,14 @@ label {
 }
 
 .back-button::before {
-  content: "\2190"; /* Unicode for left arrow */
+  content: "\2190"; /* Unicode para seta para a esquerda */
   margin-right: 10px;
 }
 
 .back-button.animate::before {
   animation: arrow-blink 1s infinite alternate;
 }
+
 
 hr {
   border: 1px solid;

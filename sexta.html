@@ -1,100 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Treino de Musculação</title>
-    <link rel="stylesheet" href="./css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meu Treino de Musculação</title>
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-    <div class="container-exercises">
-        <h1>Meu Treino de Musculação</h1>
-        <button class="botaoFullscreen" id="fullscreenBtn">Tela Cheia</button>
-        <div class="exercises">
-            <h2>Sexta-feira: Braços</h2>
-            <ul>
-                <li>
-                    <input type="checkbox" id="Curl">
-                    <label for="Curl">Curl com barra (ou halteres)</label>
-                    <input class="carga" type="text" placeholder="(kg)">
-                </li>
-                <li>
-                    <div class="series">4 séries - 8 - 12 repetições </div>
-                </li>
-                <li>
-                   <iframe class="videos"
-                        width="640"
-                        height="360"
-                        src="https://www.youtube.com/embed/s4B8UW3BMqk"
-                        title="Curl com halteres - Exercício para os Braços"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen>
-                    </iframe>
-                </li>    
-                <li>
-                    <input type="checkbox" id="triceps-testa">
-                    <label for="triceps-testa">Tríceps testa</label>
-                    <input class="carga" type="text" placeholder="(kg)">
-                </li>
-                    <li>
-                        <div class="series">3 séries - 10 - 15 repetições</div>
-                    </li>
-                    <li>
-                       <iframe class="videos"
-                            width="640"
-                            height="360"
-                            src="https://www.youtube.com/embed/oqob5MHbzBc"
-                            title="triceps-testa - Exercício para Braços"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen>
-                        </iframe>
-                    </li>  
-                <li>
-                    <input type="checkbox" id="rosca-alternada">
-                    <label for="Rosca alternada com halteres">Rosca alternada com alteres</label>
-                    <input class="carga" type="text" placeholder="(kg)">
-                    <li>
-                        <div class="series">3 séries - 10 - 12 repetições</div>
-                    </li>
-                    <li>
-                       <iframe class="videos"
-                            width="640"
-                            height="360"
-                            src="https://www.youtube.com/embed/k31LK_VASok"
-                            title="Elevação frontal - Exercício para Braços"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen>
-                        </iframe>
-                    </li>  
-                </li>
-                <li>
-                    <input type="checkbox" id="triceps-corda">
-                    <label for="triceps-corda">Tríceps corda</label>
-                    <input class="carga" type="text" placeholder="Quant.">
-                    <li>
-                        <div class="series">3 séries - 12 - 15 repetições</div>
-                    </li>
-                    <li>
-                       <iframe class="videos"
-                            width="640"
-                            height="360"
-                            src="https://www.youtube.com/embed/gbnLZto6b0s"
-                            title="triceps-cordas - Exercício para Braços"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen>
-                        </iframe>
-                    </li>  
-                </li>
-            </ul>
-        </div>
+  <div class="container-exercises">
+    <h1>Meu Treino de Musculação</h1>
+    <button class="botaoFullscreen" id="fullscreenBtn">Tela Cheia</button>
+    <div class="exercises">
+      <h2>Sexta-feira: Braços</h2>
+      <ul>
+        <li>
+          <label for="curl">Curl com barra (ou halteres)</label>
+          <input type="checkbox" id="curl" />
+          <input class="carga" type="text" placeholder="(kg)" />
+        </li>
+        <li>
+          <div class="series">4 séries - 8 - 12 repetições</div>
+        </li>
+        <li>
+          <iframe class="videos" width="640" height="360" src="https://www.youtube.com/embed/s4B8UW3BMqk" title="Curl com halteres - Exercício para os Braços" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </li>
+        <li>
+          <label for="triceps-testa">Tríceps testa</label>
+          <input type="checkbox" id="triceps-testa" />
+          <input class="carga" type="text" placeholder="(kg)" />
+        </li>
+        <li>
+          <div class="series">3 séries - 10 - 15 repetições</div>
+        </li>
+        <li>
+          <iframe class="videos" width="640" height="360" src="https://www.youtube.com/embed/oqob5MHbzBc" title="Tríceps testa - Exercício para Braços" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </li>
+        <li>
+          <label for="rosca-alternada">Rosca alternada com halteres</label>
+          <input type="checkbox" id="rosca-alternada" />
+          <input class="carga" type="text" placeholder="(kg)" />
+        </li>
+        <li>
+          <div class="series">3 séries - 10 - 12 repetições</div>
+        </li>
+        <li>
+          <iframe class="videos" width="640" height="360" src="https://www.youtube.com/embed/k31LK_VASok" title="Rosca alternada com halteres - Exercício para Braços" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </li>
+        <li>
+          <label for="triceps-corda">Tríceps corda</label>
+          <input type="checkbox" id="triceps-corda" />
+          <input class="carga" type="text" placeholder="Quant." />
+        </li>
+        <li>
+          <div class="series">3 séries - 12 - 15 repetições</div>
+        </li>
+        <li>
+          <iframe class="videos" width="640" height="360" src="https://www.youtube.com/embed/gbnLZto6b0s" title="Tríceps corda - Exercício para Braços" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </li>
+      </ul>
     </div>
-    <button
-    class="back-button animate"
-    id="backButton">Voltar</button>
-    <script src="./js/script.js"></script>
+  </div>
+  <button class="back-button animate" id="backButton">Voltar</button>
+  <script src="./js/script.js"></script>
 </body>
 </html>
