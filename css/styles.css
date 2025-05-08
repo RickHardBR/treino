@@ -259,7 +259,7 @@ label {
 .back-button {
   position: fixed;
   bottom: 5px;
-  right: 5px;
+  right: 1px;
   background-color: transparent;
   color: #fff;
   padding: 5px 10px;
