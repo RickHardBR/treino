@@ -12,6 +12,18 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+    function goBack() {
+        // Verifica se há histórico para voltar
+        if (document.referrer && document.referrer.includes(window.location.hostname)) {
+          history.back(); // Volta para a página anterior dentro do mesmo site
+        } else {
+          window.location.href = "index.html"; // Vai para a index se não houver histórico interno
+        }
+      }
+      const backButton = document.getElementById('backButton');
+if (backButton) {
+    backButton.addEventListener('click', goBack);
+}
 
     // Fullscreen
     const fullscreenBtn = document.getElementById('fullscreenBtn');
