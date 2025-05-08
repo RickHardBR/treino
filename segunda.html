@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Treino de Musculação</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/style_emotion.css">
 </head>
+
 <body>
     <div class="container-exercises">
         <h1>Meu Treino de Musculação</h1>
         <button class="botaoFullscreen" id="fullscreenBtn">Tela Cheia</button>
+
         <div class="exercises">
             <h2>Segunda-feira: Peito</h2>
             <ul>
+                <!-- Supino -->
                 <li>
-                <h2 class="title_exercise">Supino (barra ou alteres)</h2>
+                    <h2 class="title_exercise">Supino (barra ou alteres)</h2>
                     <label class="switch">
                         <span class="switch__wrapper">
                             <input class="switch__input" type="checkbox" role="switch">
@@ -37,73 +39,36 @@
                         <span class="switch__label">Power</span>
                         <input class="carga" type="text" placeholder="(kg)">
                     </label>
+                    <div class="series">4 séries - 8 repetições</div>
                 </li>
-                <div class="series">4 séries - 8 repetições </div>
-                <li>
-                </li>
-                <li>
+
+                <li id="group-supino">
                     <div class="carousel">
-                        <div class="carousel-item">
-                            <iframe class="videos"
-                            src="https://www.youtube.com/embed/SWVO95XzxKg"
-                            title="Crucifixo (máquina ou alteres)"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin">
-                            </iframe>
+                        <!-- Carrossel do Supino -->
+                        <div class="carousel-item mySlideVideo">
+                            <iframe class="videos" src="https://www.youtube.com/embed/SWVO95XzxKg" title="Supino Reto com halteres" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                         </div>
-                        <div class="carousel-item">
-                            <iframe class="videos"
-                            src="https://www.youtube.com/embed/Kr2erpSyu3M"
-                            title="Crucifixo (máquina ou alteres)"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin">
-                            </iframe>
+                        <div class="carousel-item mySlideVideo">
+                            <iframe class="videos" src="https://www.youtube.com/embed/Kr2erpSyu3M" title="Supino Reto com máquina" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                         </div>
-                        <div class="carousel-item">
-                            <iframe class="videos"
-                            src="https://www.youtube.com/embed/F4Q1g2z8MWM"
-                            title="Crucifixo (máquina ou alteres)"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin">
-                            </iframe>
+                        <div class="carousel-item mySlideVideo">
+                            <iframe class="videos" src="https://www.youtube.com/embed/F4Q1g2z8MWM" title="Supino inclinado com halteres" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                         </div>
-                        <div class="carousel-item">
-                            <iframe class="videos"
-                            src="https://www.youtube.com/embed/5oUAqXhViSg"
-                            title="Crucifixo (máquina ou alteres)"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin">
-                            </iframe>
-                        </div>
-                        <div class="carousel-item">
-                            <iframe class="videos"
-                            src="https://www.youtube.com/embed/z1Oao5-R-k4"
-                            title="Crucifixo (máquina ou alteres)"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin">
-                            </iframe>
-                        </div>
-                        <div class="carousel-item">
-                            <iframe class="videos"
-                            src="https://www.youtube.com/embed/D_h6XI_YxhA"
-                            title="Crucifixo (máquina ou alteres)"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin">
-                            </iframe>
-                        </div>
-                        <div class="carousel-item">
-                            <iframe class="videos"
-                            src="https://www.youtube.com/embed/-RqEm6ZbMtw"
-                            title="Crucifixo (máquina ou alteres)"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin">
-                            </iframe>
+                        <div class="carousel-item mySlideVideo">
+                            <iframe class="videos" src="https://www.youtube.com/embed/5oUAqXhViSg" title="Supino declinado com halteres" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                         </div>
                     </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-prev">Anterior</button>
+                        <button class="carousel-next">Próximo</button>
+                    </div>
                 </li>
+
                 <hr>
+
+                <!-- Crucifixo -->
                 <li>
-                <h2 class="title_exercise">Crucifixo<br>(máquina ou alteres)</h2>
+                    <h2 class="title_exercise">Crucifixo (máquina ou alteres)</h2>
                     <label class="switch">
                         <span class="switch__wrapper">
                             <input class="switch__input" type="checkbox" role="switch">
@@ -123,119 +88,85 @@
                         <span class="switch__label">Power</span>
                         <input class="carga" type="text" placeholder="(kg)">
                     </label>
+                    <div class="series">3 séries - 10 - 15 repetições</div>
                 </li>
-                <div class="series">3 séries - 10 - 15 repetições</div>
-                <li>
-                </li>
-                <li>
+
+                <li id="group-crucifixo">
                     <div class="carousel">
-                        <div class="carousel-item">
-                            <iframe class="videos"
-                            src="https://www.youtube.com/embed/NB_1mCfIOLU"
-                            title="Crucifixo (máquina ou alteres)"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin">
-                            </iframe>
+                        <div class="carousel-item mySlideVideo">
+                            <iframe class="videos" src="https://www.youtube.com/embed/NB_1mCfIOLU" title="Crucifixo (máquina ou alteres)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                         </div>
-                        <div class="carousel-item">
-                            <iframe class="videos"
-                            src="https://www.youtube.com/embed/o90Pm6qTeNI"
-                            title="Crucifixo (máquina ou alteres)"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin">
-                            </iframe>
+                        <div class="carousel-item mySlideVideo">
+                            <iframe class="videos" src="https://www.youtube.com/embed/o90Pm6qTeNI" title="Crucifixo (máquina ou alteres)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                         </div>
-                        <div class="carousel-item">
-                            <iframe class="videos"
-                            src="https://www.youtube.com/embed/1D9x_U6PkY8"
-                            title="Crucifixo (máquina ou alteres)"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin">
-                            </iframe>
-                        </div>
-                        <div class="carousel-item">
-                            <iframe class="videos"
-                            src="https://www.youtube.com/embed/SNN6BftNts8"
-                            title="Crucifixo (máquina ou alteres)"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin">
-                            </iframe>
-                        </div>
-                        <div class="carousel-item">
-                            <iframe class="videos"
-                            src="https://www.youtube.com/embed/NPQ3zjKwa4g"
-                            title="Crucifixo (máquina ou alteres)"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin">
-                            </iframe>
-                        </div>
-                        <div class="carousel-item">
-                            <iframe class="videos"
-                            src="https://www.youtube.com/embed/3bF87yW4enQ"
-                            title="Crucifixo (máquina ou alteres)"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin">
-                            </iframe>
+                        <div class="carousel-item mySlideVideo">
+                            <iframe class="videos" src="https://www.youtube.com/embed/1D9x_U6PkY8" title="Crucifixo (máquina ou alteres)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                         </div>
                     </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-prev">Anterior</button>
+                        <button class="carousel-next">Próximo</button>
+                    </div>
                 </li>
+
                 <hr>
+
+                <!-- Pullover -->
                 <li>
                     <h2 class="title_exercise">Pullover</h2>
-                        <label class="switch">
-                            <span class="switch__wrapper">
-                                <input class="switch__input" type="checkbox" role="switch">
-                                <span class="switch__emoji">
-                                    <span class="switch__emoji-face switch__emoji-face--sad">
-                                        <span class="switch__emoji-eye"></span>
-                                        <span class="switch__emoji-eye"></span>
-                                        <span class="switch__emoji-mouth"></span>
-                                    </span>
-                                    <span class="switch__emoji-face">
-                                        <span class="switch__emoji-eye"></span>
-                                        <span class="switch__emoji-eye"></span>
-                                        <span class="switch__emoji-mouth"></span>
-                                    </span>
+                    <label class="switch">
+                        <span class="switch__wrapper">
+                            <input class="switch__input" type="checkbox" role="switch">
+                            <span class="switch__emoji">
+                                <span class="switch__emoji-face switch__emoji-face--sad">
+                                    <span class="switch__emoji-eye"></span>
+                                    <span class="switch__emoji-eye"></span>
+                                    <span class="switch__emoji-mouth"></span>
+                                </span>
+                                <span class="switch__emoji-face">
+                                    <span class="switch__emoji-eye"></span>
+                                    <span class="switch__emoji-eye"></span>
+                                    <span class="switch__emoji-mouth"></span>
                                 </span>
                             </span>
-                            <span class="switch__label">Power</span>
-                            <input class="carga" type="text" placeholder="(kg)">
-                        </label>
-                    </li>
+                        </span>
+                        <span class="switch__label">Power</span>
+                        <input class="carga" type="text" placeholder="(kg)">
+                    </label>
                     <div class="series">3 séries - 10 - 15 repetições</div>
-                    <li>
-                    </li>
-                    <li>
-                        <div class="carousel">
-                            <div class="carousel-item">
-                                <iframe class="videos"
-                                src="https://www.youtube.com/embed/JIXftJwrZrw"
-                                title="Crucifixo (máquina ou alteres)"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin">
-                                </iframe>
-                            </div>
-                            <div class="carousel-item">
-                                <iframe class="videos"
-                                src="https://www.youtube.com/embed/JIXftJwrZrw"
-                                title="Crucifixo (máquina ou alteres)"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin">
-                                </iframe>
-                            </div>
-                            
+                </li>
+
+                <li id="group-pullover">
+                    <div class="carousel">
+                        <div class="carousel-item mySlideVideo">
+                            <iframe class="videos" src="https://www.youtube.com/embed/JIXftJwrZrw" title="Pullover no banco com haltere" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                         </div>
-                    </li>
+                        <div class="carousel-item mySlideVideo" style="display: none;">
+                            <iframe class="videos" src="https://www.youtube.com/embed/pg-xDHdn_nU" title="Pullover no banco com barra" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+                        <div class="carousel-item mySlideVideo" style="display: none;">
+                            <iframe class="videos" src="https://www.youtube.com/embed/PtruvATHY5Q" title="Pullover com barra curta polia alta" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+                        <div class="carousel-item mySlideVideo" style="display: none;">
+                            <iframe class="videos" src="https://www.youtube.com/embed/fe8hkrddMtE" title="Pullover com corda polia alta" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-prev">Anterior</button>
+                        <button class="carousel-next">Próximo</button>
+                    </div>
+                </li>
             </ul>
+        </div>
+
+        <button class="back-button animate" id="backButton">
+            <img src="./images/voltar.png" alt="Seta">
+        </button>
     </div>
-    <button
-    class="back-button animate"
-    id="backButton">
-        <img src="./images/voltar.png" alt="Seta">
-    </button>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/carrocel.js"></script>
 </body>
+
 </html>

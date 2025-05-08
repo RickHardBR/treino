@@ -1,18 +1,23 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+$(document).ready(function () {
+  $('.carousel').each(function () {
+      let $carousel = $(this);
+      let $items = $carousel.find('.carousel-item');
+      let currentIndex = 0;
 
-// Next/previous controls
-function passaSlide(n) {
-  showSlides(slideIndex += n);
-}
+      // Oculta todos, mostra o primeiro
+      $items.hide().eq(currentIndex).show();
 
-function showSlides(n) {
-  var i;
-  var slides = document.querySelector(".mySlideVideo");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  slides[slideIndex-1].style.display = "block";
-}
+      // Botões dentro do mesmo grupo
+      $carousel.siblings('.carousel-controls').find('.carousel-next').click(function () {
+          $items.eq(currentIndex).hide();
+          currentIndex = (currentIndex + 1) % $items.length;
+          $items.eq(currentIndex).show();
+      });
+
+      $carousel.siblings('.carousel-controls').find('.carousel-prev').click(function () {
+          $items.eq(currentIndex).hide();
+          currentIndex = (currentIndex - 1 + $items.length) % $items.length;
+          $items.eq(currentIndex).show();
+      });
+  });
+});

@@ -64,7 +64,7 @@ label {
 
 .exercises input[type="text"] {
   margin-left: .625rem;
-  Width: 3.125rem;
+  width: 3.125rem;
 }
 
 .carga {
@@ -269,6 +269,7 @@ label {
   outline: none;
   transition: background-color 0.3s;
   z-index: 1000;
+  aria-label: "Voltar"
 }
 
 .back-button img {
@@ -318,10 +319,12 @@ hr {
  /* 600px (tipicamente dispositivos móveis) */
 @media only screen and (max-width: 600px){
   .videos {
-    width: 95%;
-    height: 18.75rem;
-    padding: 0.65rem;
-  }
+    width: 100%;
+    height: 315px;
+    max-width: 100%;
+    border: none;
+}
+
 }
 
 /* largura mínima de 601px (tipicamente dispositivos desktop) */
@@ -367,7 +370,7 @@ hr {
 }
 
 .carousel-item {
-  display: none;
+  padding: 0.65rem;
 }
 
 iframe {
